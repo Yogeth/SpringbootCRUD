@@ -9,7 +9,7 @@ public class CrudApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(CrudApplication.class, args);
 		
-		System.out.print("welcome welcome welcome pathu nimisathula maan kari briyani ready 
+		System.out.print("welcome welcome welcome pathu nimisathula maan kari briyani ready"); 
 	}
 
 }
