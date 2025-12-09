@@ -13,6 +13,6 @@ public class StudentController{
   
   @GetMapping("students")
 public  List<Student> getStudents(){
-  return St.getStudents();
+  return st.getStudents();
 }
 }

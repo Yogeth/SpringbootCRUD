@@ -5,7 +5,7 @@ public class Student {
   String name;
   String tech;
   
-  Student(int rno,String n,String tech){
+ public Student(int rno,String n,String tech){
     this.rollno=rno;
     this.name=n;
     this.tech=tech;
