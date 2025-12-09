@@ -7,7 +7,7 @@ package com.example.demo.controller;
  import com.example.demo.entity.Student;
 
 @RestController
-class StudentController{
+public class StudentController{
   @Autowired 
   Studentservice st;
   
