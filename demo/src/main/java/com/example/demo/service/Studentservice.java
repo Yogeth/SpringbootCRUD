@@ -24,4 +24,8 @@ public class Studentservice{
    }
     return students.get(index);
   }
+  
+  public void addData(Student info){
+  return  students.add(info);
+  }
 }

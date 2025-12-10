@@ -20,4 +20,10 @@ public  List<Student> getStudents(){
 public Student getrollno(@PathVariable("rno")int rollno){
    return st.getbyrno(rollno);
 }
+
+@PostMapping("students")
+public String postData(@RequestBody Student student){
+   st.addData(student);
+   return "SUCESS!!";
+}
 } 
