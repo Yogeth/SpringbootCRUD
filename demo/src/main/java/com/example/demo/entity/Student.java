@@ -5,6 +5,10 @@ public class Student {
     private int rollno;
     private String name;
     private String tech;
+  
+    public Student(){
+        
+    }
 
     public Student(int rno, String n, String tech){
         this.rollno = rno;
