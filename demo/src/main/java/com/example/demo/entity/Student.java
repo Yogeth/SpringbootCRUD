@@ -19,12 +19,22 @@ public class Student {
     public int getRollno() {
         return rollno;
     }
+    public void setRollno(int rollno) {
+        this.rollno = rollno;
+    }
 
     public String getName() {
         return name;
     }
+    public void setName(String name) {
+        this.name = name;
+    }
+
 
     public String getTech() {
         return tech;
+    }
+    public void setTech(String tech) {
+        this.tech = tech;
     }
 }
