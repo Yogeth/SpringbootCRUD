@@ -2,7 +2,7 @@
 
 public class Student {
 
-    private int rollno;
+    private Integer rollno;
     private String name;
     private String tech;
   
@@ -10,16 +10,16 @@ public class Student {
         
     }
 
-    public Student(int rno, String n, String tech){
+    public Student(Integer rno, String n, String tech){
         this.rollno = rno;
         this.name = n;
         this.tech = tech;
     }
 
-    public int getRollno() {
+    public Integer getRollno() {
         return rollno;
     }
-    public void setRollno(int rollno) {
+    public void setRollno(Integer rollno) {
         this.rollno = rollno;
     }
 
