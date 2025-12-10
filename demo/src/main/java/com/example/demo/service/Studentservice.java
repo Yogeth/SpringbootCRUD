@@ -32,7 +32,7 @@ public class Studentservice{
   public String putData(Student newstudent){
     Integer index=0;
     Boolean found=false;
-   for(int i=0;i<student.size();i++){
+   for(int i=0;i<students.size();i++){
      if(students.get(i).getRollno()==newstudent.getRollno()){
        index=i;
        found=true;
