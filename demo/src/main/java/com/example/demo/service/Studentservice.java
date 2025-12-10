@@ -57,8 +57,8 @@ public class Studentservice{
   public String removeData(Integer rno){
     Integer index=0;
     Boolean found=false;
-    for(Integer i=0;i<students.size();i++){
-      if(students.get(i).getRollno()==rno){
+    for(int i=0;i<students.size();i++){
+      if(students.get(i).getRollno().equals(rno)){
         index=i;
         found=true;
       }
