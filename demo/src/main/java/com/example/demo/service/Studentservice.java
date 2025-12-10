@@ -15,14 +15,19 @@ public class Studentservice{
   }
   
   public Student getbyrno(int nums){
-   //  return students.get(nums);
-   int index=0;
+   Integer index=0;
+   Boolean found=false;
    for(int i=0;i<students.size();i++){
      if(students.get(i).getRollno()==nums){
        index=i;
+       found=true;
      }
    }
+   if(found){
     return students.get(index);
+   }else{
+     return "NO SUCH DATA FOUND";
+   }
   }
   
   public void addData(Student info){
@@ -47,5 +52,22 @@ public class Studentservice{
        return "NO DATA FOUND TO UPDATE!";
      }
       
+  }
+  
+  public String removeData(Integer rno){
+    Integer index=0;
+    Boolean found=false;
+    for(Integer i=0;i<students.size();i++){
+      if(students.get(i).getRollno()==rno){
+        index=i;
+        found=true;
+      }
+    }
+    if(found){
+    students.remove(index);
+    return "DELETED SUCESSFULLY";
+    }else{
+      return "NO DATA EXISTS TO DELETE";
+    }
   }
 }

@@ -32,3 +32,9 @@ public String updateData(@RequestBody Student student){
   return st.putData(student);
 }
 } 
+
+@DeleteMapping("students/{rno}")
+
+public String deleteData(@PathVariable Integer rno){
+  return st.removeData(rno);
+}
