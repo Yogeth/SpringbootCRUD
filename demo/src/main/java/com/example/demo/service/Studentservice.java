@@ -15,6 +15,13 @@ public class Studentservice{
   }
   
   public Student getbyrno(int nums){
-     return students.get(nums);
+   //  return students.get(nums);
+   int index=0;
+   for(int i=0;i<students.size();i++){
+     if(students.get(i).getRollno()==nums){
+       index=i;
+     }
+   }
+    return students.get(nums);
   }
 }
