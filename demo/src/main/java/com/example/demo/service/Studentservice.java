@@ -22,6 +22,6 @@ public class Studentservice{
        index=i;
      }
    }
-    return students.get(nums);
+    return students.get(index);
   }
 }
