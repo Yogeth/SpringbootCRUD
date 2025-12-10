@@ -55,7 +55,7 @@ public class Studentservice{
       
   }
   
-  public String removeData(Integer rno){
+/*  public String removeData(Integer rno){
     Integer index=0;
     Boolean found=false;
     for(int i=0;i<students.size();i++){
@@ -71,5 +71,15 @@ public class Studentservice{
     }else{
       return "NO DATA EXISTS TO DELETE";
     }
-  }
+  } */
+  public String removeData(Integer rno) {
+    // This line performs the iteration and removal based on the condition (the roll number match)
+    boolean wasRemoved = students.removeIf(student -> student.getRollno().equals(rno));
+
+    if (wasRemoved) {
+        return "DELETED SUCESSFULLY";
+    } else {
+        return "NO DATA EXISTS TO DELETE";
+    }
+}
 }
