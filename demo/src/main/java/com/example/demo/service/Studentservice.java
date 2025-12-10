@@ -28,4 +28,10 @@ public class Studentservice{
   public void addData(Student info){
       students.add(info);
   }
+  
+  public void putData(Student student){
+    Integer index=0;
+  
+      students.set(index,student);
+  }
 }

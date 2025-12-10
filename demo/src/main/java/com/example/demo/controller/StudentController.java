@@ -26,4 +26,10 @@ public String postData(@RequestBody Student student){
    st.addData(student);
    return "SUCESS!!";
 }
+
+@PutMapping("students")
+public String updateData(@RequestBody Student student){
+  st.putData(student);
+  return "Updated!";
+}
 } 
