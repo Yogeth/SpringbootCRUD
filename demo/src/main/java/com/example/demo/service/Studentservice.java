@@ -21,6 +21,7 @@ public class Studentservice{
      if(students.get(i).getRollno().equals(nums)){
        index=i;
        found=true;
+       break;
      }
    }
    if(found){
@@ -61,6 +62,7 @@ public class Studentservice{
       if(students.get(i).getRollno().equals(rno)){
         index=i;
         found=true;
+        break;
       }
     }
     if(found){
