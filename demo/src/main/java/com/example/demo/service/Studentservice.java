@@ -26,6 +26,6 @@ public class Studentservice{
   }
   
   public void addData(Student info){
-  return  students.add(info);
+      students.add(info);
   }
 }
