@@ -33,7 +33,7 @@ public class Studentservice{
     Integer index=0;
     Boolean found=false;
    for(int i=0;i<student.size();i++){
-     if(student.get(i).getRollno()==newstudent.getRollno()){
+     if(students.get(i).getRollno()==newstudent.getRollno()){
        index=i;
        found=true;
        break;
