@@ -15,4 +15,9 @@ public class StudentController{
 public  List<Student> getStudents(){
   return st.getStudents();
 }
+
+@GetMapping("students/{rno}")
+public Student getrollno(@PathVariable("rno")int rollno){
+   return st.getbyrno(rollno);
+}
 } 

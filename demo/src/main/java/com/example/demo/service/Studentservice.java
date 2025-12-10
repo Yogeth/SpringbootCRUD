@@ -13,4 +13,8 @@ public class Studentservice{
   public List<Student> getStudents(){
        return students;
   }
+  
+  public Student getbyrno(int nums){
+     return students.get(nums);
+  }
 }
