@@ -14,7 +14,7 @@ public class Studentservice{
        return students;
   }
   
-  public List<Student> getbyrno(int nums){
+  public Student getbyrno(int nums){
      return students.get(nums);
   }
 }
