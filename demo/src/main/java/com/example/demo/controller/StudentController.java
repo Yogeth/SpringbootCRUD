@@ -17,7 +17,7 @@ public  List<Student> getStudents(){
 }
 
 @GetMapping("students/{rno}")
-public Student getrollno(@PathVariable("rno")int rollno){
+public List<Student> getrollno(@PathVariable("rno")int rollno){
    return st.getbyrno(rollno);
 }
 } 
