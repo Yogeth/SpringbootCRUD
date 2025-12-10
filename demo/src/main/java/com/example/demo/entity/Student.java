@@ -6,9 +6,9 @@ public class Student {
     private String name;
     private String tech;
   
-    public Student(){
+  //  public Student(){
         
-    }
+ //   }
 
     public Student(Integer rno, String n, String tech){
         this.rollno = rno;
