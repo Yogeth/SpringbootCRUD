@@ -18,7 +18,7 @@ public class Studentservice{
    Integer index=0;
    Boolean found=false;
    for(int i=0;i<students.size();i++){
-     if(students.get(i).getRollno()==nums){
+     if(students.get(i).getRollno().equals(nums)){
        index=i;
        found=true;
      }
@@ -38,7 +38,7 @@ public class Studentservice{
     Integer index=0;
     Boolean found=false;
    for(int i=0;i<students.size();i++){
-     if(students.get(i).getRollno()==newstudent.getRollno()){
+     if(students.get(i).getRollno().equals(newstudent.getRollno())){
        index=i;
        found=true;
        break;
