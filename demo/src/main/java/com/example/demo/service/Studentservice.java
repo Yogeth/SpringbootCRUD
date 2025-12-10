@@ -29,9 +29,21 @@ public class Studentservice{
       students.add(info);
   }
   
-  public void putData(Student student){
+  public String putData(Student newstudent){
     Integer index=0;
-  
-      students.set(index,student);
+    Boolean found=false;
+   for(int i=0;i<student.size();i++){
+     if(student.get(i).getRollno()==newstudent.getRollno()){
+       index=i;
+       found=true;
+       break;
+       }
+     }
+     if(found){
+    students.set(index,newstudent);
+     }else{
+       return "NO DATA FOUND TO UPDATE!";
+     }
+      
   }
 }
